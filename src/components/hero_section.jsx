@@ -38,7 +38,7 @@ const HeroComponent = () => {
                   <a key={index} href={path} className="no-underline outline-none w-fit">
                     <div className="flex items-center gap-3 uppercase text-sm group py-2">
                       <div className={`border-b border-b-gray-600 group-hover:w-[60px] duration-300 ease-in group-hover:border-b-white ${active ? "w-[60px] border-b-white" : "w-[35px]"}`}></div>
-                      <div className={`hover:text-white duration-300 ease-in ${active ? "text-white" : "text-gray-500"}`}>
+                      <div className={`group-hover:text-white duration-300 ease-in ${active ? "text-white" : "text-gray-500"}`}>
                         {name}
                       </div>
                     </div>
