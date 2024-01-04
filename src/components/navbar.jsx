@@ -4,7 +4,7 @@ import DropDownMenuWidget from "../utils/dropdown-menu"
 const NavbarComponent = () => {
   return (
     <>
-      <nav className="py-4 xl:px-0 px-5 fixed top-0 right-0 left-0 w-full max-w-6xl mx-auto">
+      <nav className="py-4 xl:px-0 z-50 px-5 fixed top-0 right-0 left-0 w-full max-w-6xl mx-auto">
         <div className="flex flex-row">
           <Link data-aos="fade-down"
             data-aos-duration="1000"
