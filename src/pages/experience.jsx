@@ -16,7 +16,9 @@ const ExperienceSection = () => {
             const { title, company, content, duration, tools } = data;
 
             return (
-              <div key={index} className="flex lg:flex-row flex-col gap-3 group ">
+              <div data-aos="fade-up"
+                data-aos-duration="1000"
+                ata-aos-easing="ease-in" key={index} className="flex lg:flex-row flex-col gap-3 group ">
                 <div className="text-[12px] leading-6 basis-1/4 uppercase">
                   {duration}
                 </div>
@@ -44,7 +46,9 @@ const ExperienceSection = () => {
           })}
         </div>
 
-        <div className="mt-8">
+        <div data-aos="fade-up"
+          data-aos-duration="1000"
+          ata-aos-easing="ease-in" className="mt-8">
           <a href={resume} target="_blank" rel="noreferrer" className="no-underline w-fit group outline-none font-[500] text-base text-white duration-300 ease-in hover:text-blue-300 flex gap-2 items-center">
             <div>
               View Full Résumé

@@ -5,6 +5,8 @@ import AnimatedCursor from "react-animated-cursor";
 import HeroComponent from "./components/hero_section";
 import AboutSection from "./pages/about";
 import ExperienceSection from "./pages/experience";
+import ProjectsSection from "./pages/projects";
+import ContactSection from "./pages/contact";
 
 const App = () => {
   useEffect(() => {
@@ -48,6 +50,8 @@ const App = () => {
           <div className="xl:ml-[50%] lg:ml-[53%] lg:py-24 py-16 h-full">
             <AboutSection />
             <ExperienceSection />
+            <ProjectsSection />
+            <ContactSection />
           </div>
         </section>
       </main>
