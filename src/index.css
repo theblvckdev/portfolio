@@ -19,6 +19,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding: 10rem;
+  font-family: "Poppins", sans-serif !important;
 }
 
 body {
