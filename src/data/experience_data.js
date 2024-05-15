@@ -1,6 +1,6 @@
 export const experiences = [
   {
-    title: "Frontend developer intern",
+    title: "Frontend developer",
     company: "GPRS Innovation",
     duration: "Apr 2022 - Sep 2022",
     content: `Helped deliver high-quality, productive code for a diverse array of projects
