@@ -12,11 +12,12 @@ const AboutSection = () => {
           About
         </h1>
         <p>
-          Back in 2020, I decided to try my hands at creating designs, after
-          seeing a friend coding for the first time, I tumbled head first into
-          the rabbit hole of coding and web development. Fast-foward to today,
-          and I've had the privilege of building amazing softwares that lives in
-          the web, I have also been able to share my skills with others on{" "}
+          Back in 2020, my journey as a software developer started. After seeing
+          a friend coding for the first time, I liked what I saw and tumbled
+          head first into the rabbit hole of coding and web development.
+          Fast-foward to today, and I've had the privilege of building amazing
+          softwares that lives in the web, I have also been able to share my
+          skills with others on{" "}
           <a
             href="https://twitter.com/theblvckdev"
             className="no-underline font-[500] outline-none text-white duration-300 ease-in hover:text-blue-300"

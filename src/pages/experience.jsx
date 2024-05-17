@@ -36,19 +36,6 @@ const ExperienceSection = () => {
                   </h1>
 
                   <p className="mt-3 text-sm">{content}</p>
-
-                  <div className="mt-5 flex flex-wrap gap-2 items-center">
-                    {tools.map((data, index) => {
-                      return (
-                        <div
-                          key={index}
-                          className="py-1.5 px-3 bg-blue-500 bg-opacity-10 text-[12px] xl:text-[12px] lg:text-[8px] rounded-full text-blue-300"
-                        >
-                          {data}
-                        </div>
-                      );
-                    })}
-                  </div>
                 </div>
               </div>
             );

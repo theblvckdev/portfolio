@@ -34,10 +34,11 @@ const HeroComponent = () => {
             Nathaniel Joseph
           </h1>
           <h3 className="md:text-2xl text-[25px] font-semibold lg:mt-2">
-            Front-end Developer
+            MERN Stack Developer
           </h3>
           <p className="mt-3 xl:max-w-[60%] xl:w-full lg:w-[80%] md:w-[50%] w-full text-gray-400 font-light text-base">
-            I build pixel-perfect, accessible products for the web.
+            I build pixel-perfect, functional, and accessible products for the
+            web.
           </p>
 
           <div className="mt-20 lg:block hidden">
