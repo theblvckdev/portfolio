@@ -75,13 +75,15 @@ const AllProjects = () => {
           >
             <div className="grid grid-cols-7 gap-5 items-center pb-3 border-b border-b-gray-300 border-opacity-10">
               <div className="text-white text-base">Year</div>
-              <div className="text-white text-base lg:col-span-2 md:col-span-4 text-left">
-                Project
+              <div className="text-white text-base text-left lg:col-span-1 col-span-3">
+                Project title
               </div>
-              <div className="text-white text-base col-span-3 lg:block md:hidden hidden">
+              <div className="text-white text-base lg:block md:hidden hidden col-span-2">
                 Built with
               </div>
-              <div className="text-white text-base md:block hidden">Link</div>
+              <div className="text-white text-base md:block hidden lg:col-span-3">
+                Link
+              </div>
             </div>
             {projects.map((data, index) => {
               const { title, tools, liveUrl, year } = data;
@@ -92,11 +94,11 @@ const AllProjects = () => {
                   className="grid grid-cols-7 gap-5 items-center mt-4 pb-3 border-b border-b-gray-300 border-opacity-10"
                 >
                   <div className="text-white text-base">{year}</div>
-                  <div className="text-white text-base lg:col-span-1 md:col-span-4 col-span-4 text-left mr-auto w-full">
+                  <div className="text-white lg:text-base text-sm text-left mr-auto w-full lg:col-span-1 col-span-3">
                     {title}
                   </div>
-                  <div className="text-white text-base lg:block md:hidden hidden"></div>
-                  <div className="text-white text-base col-span-3 lg:block md:hidden hidden">
+                  {/* <div className="text-white text-base lg:block md:hidden hidden"></div> */}
+                  <div className="text-white text-base lg:block md:hidden hidden col-span-2">
                     <div className="flex flex-wrap gap-2 items-center">
                       {tools.map((data, index) => {
                         return (
@@ -110,15 +112,20 @@ const AllProjects = () => {
                       })}
                     </div>
                   </div>
-                  <div className="text-white text-base">
+                  <div className="text-white text-base lg:col-span-3 col-span-3">
                     <a
                       href={liveUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="no-underline w-fit group outline-none font-[500] text-base text-white duration-300 ease-in hover:text-blue-300 flex gap-2 items-center"
+                      className="w-fit group outline-none font-[500] text-base duration-300 ease-in no-underline hover:text-blue-300 flex gap-2 items-center"
                     >
-                      <div>Live preview</div>
-                      <MdArrowOutward className="duration-300 ease-in group-hover:-translate-y-1 group-hover:translate-x-1" />
+                      <div className="text-[12px] text-blue-300 lg:block hidden">
+                        {liveUrl}
+                      </div>
+                      <div className="text-[12px] text-blue-300 lg:hidden block">
+                        Live preview
+                      </div>
+                      <MdArrowOutward className="duration-300 ease-in group-hover:-translate-y-1 group-hover:translate-x-1 text-blue-300" />
                     </a>
                   </div>
                 </div>
