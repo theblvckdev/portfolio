@@ -110,4 +110,13 @@ seamless navigation and information retrieval.`,
     tools: ["HTML5", "CSS3", "Bootstrap v4"],
     year: 2022,
   },
+
+  {
+    thumbnail: null,
+    title: "To-do app",
+    content: null,
+    liveUrl: "https://ts-todo-app-v2.vercel.app/",
+    tools: ["React", "Typescript", "Tailwind"],
+    year: 2023,
+  },
 ];
