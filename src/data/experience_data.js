@@ -1,22 +1,47 @@
 export const experiences = [
   {
     title: "Frontend developer",
-    company: "GPRS Innovation",
-    duration: "Apr 2022 - Sep 2022",
-    content: `Helped deliver high-quality, productive code for a diverse array of projects
-    for clients. Also taught over 10 students the basics of frontend web
-    development, helping them to understand HTML, CSS & JavaScript.`,
-    tools: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    company: "BethelFlow",
+    link: "https://bethel-flow.vercel.app/",
+    duration: "Feb 2025 - Present",
+    content:
+      "Developed responsive web applications, optimized for performance, implemented responsive design principles, fixed high prioority bugs, and collaborated with cross-functional teams.",
+    tools: [
+      "Next.js",
+      "Typescript",
+      "TailwindCSS",
+      "Zod",
+      "React Query",
+      "Redux",
+    ],
   },
 
   {
-    title: "Graphics Designer",
-    company: "Fix Impressions",
-    duration: "Feb 2023 - Nov 2023",
-    content: `Participated in designing unique magazines, invitation cards, flyers and
-    many more. Learned to use design tools like: corel draw, photoshop,
-    adobe illustrator. I was also given the privilege to teach 2 new employees
-    some of the tools used.`,
-    tools: ["Corel Draw", "Photoshop", "Adobe Illustrator"],
+    title: "Frontend developer",
+    company: "BrandDrive",
+    link: "https://branddrive.co/",
+    duration: "Oct 2024 - Feb 2025",
+    content: `Built and maintained responsive user interfaces that supported the company’s core business tools.
+ Collaborated closely with designers and backend engineers to implement new features.
+ Improve performance, and ensure a seamless user experience`,
+    tools: [
+      "Ionic",
+      "Next.js",
+      "Typescript",
+      "TailwindCSS",
+      "Yup",
+      "React Query",
+      "Redux",
+    ],
+  },
+
+  {
+    title: "Software Developer",
+    company: "Creatvise",
+    link: "https://www.creatvise.com/",
+    duration: "Oct 2024 - Jan 2025",
+    content: `I contributed to the development of a design software.
+ I worked independently with the product team to translate design into functional components`,
+    tools: ["UX", "Next.js", "Typescript"],
   },
 ];

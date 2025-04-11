@@ -1,26 +1,62 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
 import { BsTwitterX } from "react-icons/bs";
 
 const HeroComponent = () => {
+  const [activeSection, setActiveSection] = useState("");
+
   const linksToSections = [
-    { name: "About", path: "#about", active: false },
-    { name: "Experience", path: "#experience", active: false },
-    { name: "Projects", path: "#projects", active: false },
+    {
+      name: "About",
+      path: "#about",
+      active: activeSection === "about",
+    },
+    {
+      name: "Experience",
+      path: "#experience",
+      active: activeSection === "experience",
+    },
+    {
+      name: "Projects",
+      path: "#projects",
+      active: activeSection === "projects",
+    },
   ];
 
   const socialLinks = [
     { icon: <IoLogoGithub />, path: "https://github.com/theblvckdev" },
     {
       icon: <IoLogoInstagram />,
-      path: "https://www.instagram.com/nathan_who_codes/",
+      path: "https://www.instagram.com/blank.me101/",
     },
-    { icon: <BsTwitterX />, path: "https://twitter.com/theblvckdev" },
+    { icon: <BsTwitterX />, path: "https://x.com/just_nathan001" },
     {
       icon: <IoLogoLinkedin />,
-      path: "https://www.linkedin.com/in/nathaniel-joseph-8b172a291/",
+      path: "https://www.linkedin.com/in/theblvckdev/",
     },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["about", "experience", "projects"];
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -34,11 +70,10 @@ const HeroComponent = () => {
             Nathaniel Joseph
           </h1>
           <h3 className="md:text-2xl text-[25px] font-semibold lg:mt-2">
-            MERN Stack Developer
+            Frontend Developer
           </h3>
           <p className="mt-3 xl:max-w-[60%] xl:w-full lg:w-[80%] md:w-[50%] w-full text-gray-400 font-light text-base">
-            I build pixel-perfect, functional, and accessible products for the
-            web.
+            I build pixel-perfect, functional, and scalable web applications.
           </p>
 
           <div className="mt-20 lg:block hidden">

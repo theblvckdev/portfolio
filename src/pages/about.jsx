@@ -11,16 +11,16 @@ const AboutSection = () => {
         <h1 className="text-white font-semibold text-2xl lg:hidden block mb-5">
           About
         </h1>
-        <p>
-          Back in 2020, my journey as a software developer started. After seeing
-          a friend coding for the first time, I liked what I saw and tumbled
-          head first into the rabbit hole of coding and web development.
-          Fast-foward to today, and I've had the privilege of building amazing
-          softwares that lives in the web, I have also been able to share my
-          skills with others on{" "}
+        <p className="text-sm">
+          In 2021, I embarked on my journey as a software developer after being
+          inspired by witnessing a colleague's programming work. This sparked my
+          passion for coding and web development, leading me to fully immerse
+          myself in the field. Today, I have had the privilege of developing
+          sophisticated web applications and solutions, while also sharing my
+          expertise with others on{" "}
           <a
             href="https://twitter.com/theblvckdev"
-            className="no-underline font-[500] outline-none text-white duration-300 ease-in hover:text-blue-300"
+            className="underline outline-none text-white duration-300 ease-in hover:text-blue-300"
             target="_blank"
             rel="noreferrer"
           >
@@ -28,8 +28,8 @@ const AboutSection = () => {
           </a>
           ,{" "}
           <a
-            href="https://www.linkedin.com/in/nathaniel-joseph-8b172a291/"
-            className="no-underline font-[500] outline-none text-white duration-300 ease-in hover:text-blue-300"
+            href="https://www.linkedin.com/in/theblvckdev/"
+            className="underline outline-none text-white duration-300 ease-in hover:text-blue-300"
             target="_blank"
             rel="noreferrer"
           >
@@ -38,22 +38,14 @@ const AboutSection = () => {
           , and other platforms.
         </p>
 
-        <p className="mt-4">
-          My main focus these days is building projects that would help me get
-          better at doing what I love. In my free time, I also take up
-          challenges on{" "}
-          <a
-            href="https://www.frontendmentor.io/"
-            className="no-underline font-[500] outline-none text-white duration-300 ease-in hover:text-blue-300"
-            target="_blank"
-            rel="noreferrer"
-          >
-            frontend mentor
-          </a>
-          , and also participate in coding hackathons.
+        <p className="mt-4 text-sm">
+          Currently, my primary focus is on developing innovative projects that
+          enhance my technical expertise and problem-solving abilities. During
+          my spare time, I actively engage in coding challenges, and participate
+          in competitive programming hackathons to further expand my skills and
+          knowledge.
         </p>
-
-        <p className="mt-4">
+        <p className="mt-4 text-sm">
           When I’m not at the computer, I’m usually playing soccer or
           basketball, or playing FIFA 23 with firends.
         </p>

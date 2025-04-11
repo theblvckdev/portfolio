@@ -1,6 +1,5 @@
 import { experiences } from "../data/experience_data";
 import { MdArrowOutward } from "react-icons/md";
-import resume from "../assets/pdf/Resume.pdf";
 
 const ExperienceSection = () => {
   return (
@@ -17,7 +16,7 @@ const ExperienceSection = () => {
         </h1>
         <div className="flex flex-col space-y-5 gap-3">
           {experiences.map((data, index) => {
-            const { title, company, content, duration, tools } = data;
+            const { title, company, link, content, duration, tools } = data;
 
             return (
               <div
@@ -27,15 +26,34 @@ const ExperienceSection = () => {
                 key={index}
                 className="flex lg:flex-row flex-col gap-3 group "
               >
-                <div className="text-[12px] leading-6 basis-1/4 uppercase">
-                  {duration}
-                </div>
+                <div className="text-xs leading-6 basis-1/4">{duration}</div>
                 <div className="basis-3/4">
-                  <h1 className="text-[16px] group-hover:text-blue-300 duration-300 ease-in font-semibold text-white">
-                    {title} @ {company}
+                  <h1 className="text-base group-hover:text-blue-300 duration-300 ease-in text-white">
+                    {title} @{" "}
+                    <a
+                      href={link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="outline-none underline"
+                    >
+                      {company}
+                    </a>
                   </h1>
 
                   <p className="mt-3 text-sm">{content}</p>
+
+                  <div className="mt-3">
+                    <div className="flex flex-wrap gap-2">
+                      {tools.map((tool, index) => (
+                        <span
+                          key={index}
+                          className="text-xs text-blue-300 bg-blue-300/10 px-3 py-1 rounded-full"
+                        >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             );
@@ -49,10 +67,10 @@ const ExperienceSection = () => {
           className="mt-8"
         >
           <a
-            href={resume}
+            href="https://docs.google.com/document/d/1JoWCt22TA8-ZWpZ1-pn6kGXnaFSU6SsJu5TeHjluMAA/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"
-            className="no-underline w-fit group outline-none font-[500] text-base text-white duration-300 ease-in hover:text-blue-300 flex gap-2 items-center"
+            className="w-fit group outline-none text-sm underline text-white duration-300 ease-in hover:text-blue-300 flex gap-2 items-center"
           >
             <div>View Full Résumé</div>
             <MdArrowOutward className="duration-300 ease-in group-hover:-translate-y-1 group-hover:translate-x-1" />

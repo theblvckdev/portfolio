@@ -1,7 +1,5 @@
 import { MdArrowOutward } from "react-icons/md";
 import { projects } from "../data/projects_data";
-import { Link } from "react-router-dom";
-import { IoArrowForwardOutline } from "react-icons/io5";
 
 const ProjectsSection = () => {
   return (
@@ -18,8 +16,8 @@ const ProjectsSection = () => {
         </h1>
 
         <div className="flex lg:space-y-4 space-y-8 flex-col">
-          {projects.slice(0, 4).map((data, index) => {
-            const { title, thumbnail, content, liveUrl, tools } = data;
+          {projects.map((data, index) => {
+            const { title, content, liveUrl, tools } = data;
 
             return (
               <a
@@ -33,21 +31,12 @@ const ProjectsSection = () => {
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   ata-aos-easing="ease-in"
-                  className="flex lg:flex-row flex-col-reverse duration-300 ease-in gap-5 lg:p-4 rounded-md bg-transparent lg:hover:bg-gray-500 lg:hover:ring-1 lg:hover:ring-gray-700 lg:hover:backdrop-blur-xl lg:hover:bg-opacity-20 lg:hover:shadow-md"
+                  className="flex lg:flex-row flex-col-reverse transition-all !duration-300 !ease-in-out gap-5 lg:p-4 rounded-md bg-transparent hover:bg-gray-500 hover:ring-1 hover:ring-gray-700 hover:backdrop-blur-xl hover:bg-opacity-20 hover:shadow-md"
                 >
-                  <div className="h-[70px] w-[130px] basis-1/4 ring-2 ring-gray-700 rounded-md overflow-hidden">
-                    <img
-                      src={thumbnail}
-                      width={"100%"}
-                      className="object-fill h-[70px]"
-                      alt={title}
-                    />
-                  </div>
-
                   <div className="basis-3/4">
-                    <h1 className="text-[16px] flex gap-1 items-center group-hover:text-blue-300 duration-300 ease-in font-semibold text-white">
+                    <h1 className="text-base flex gap-1 items-center group-hover:text-blue-300 transition-colors duration-300 ease-in-out underline text-white">
                       {title}{" "}
-                      <MdArrowOutward className="duration-300 ease-in group-hover:-translate-y-1 group-hover:translate-x-1" />
+                      <MdArrowOutward className="transition-transform duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-1" />
                     </h1>
 
                     <p className="mt-3 text-sm">{content}</p>
@@ -57,7 +46,7 @@ const ProjectsSection = () => {
                         return (
                           <div
                             key={index}
-                            className="py-1.5 px-3 bg-blue-500 bg-opacity-10 text-[12px] xl:text-[12px] lg:text-[8px] rounded-full text-blue-300"
+                            className="py-1.5 px-3 bg-blue-500 bg-opacity-10 text-xs rounded-full text-blue-300"
                           >
                             {data}
                           </div>
@@ -69,21 +58,6 @@ const ProjectsSection = () => {
               </a>
             );
           })}
-        </div>
-
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          ata-aos-easing="ease-in"
-          className="mt-8"
-        >
-          <Link
-            to={"/archive"}
-            className="no-underline w-fit group outline-none font-[500] text-base text-white duration-300 ease-in hover:text-blue-300 flex gap-2 items-center"
-          >
-            <div>View Full Project Archive</div>
-            <IoArrowForwardOutline className="duration-300 ease-in group-hover:translate-x-1" />
-          </Link>
         </div>
       </section>
     </>
