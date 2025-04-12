@@ -19,7 +19,7 @@ const AboutSection = () => {
           sophisticated web applications and solutions, while also sharing my
           expertise with others on{" "}
           <a
-            href="https://twitter.com/theblvckdev"
+            href="https://twitter.com/just_nathan001"
             className="underline outline-none text-white duration-300 ease-in hover:text-blue-300"
             target="_blank"
             rel="noreferrer"

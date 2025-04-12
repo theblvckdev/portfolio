@@ -31,7 +31,7 @@ const ProjectsSection = () => {
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   ata-aos-easing="ease-in"
-                  className="flex lg:flex-row flex-col-reverse transition-all !duration-300 !ease-in-out gap-5 lg:p-4 rounded-md bg-transparent hover:bg-gray-500 hover:ring-1 hover:ring-gray-700 hover:backdrop-blur-xl hover:bg-opacity-20 hover:shadow-md"
+                  className="flex lg:flex-row flex-col-reverse transition-all !duration-300 !ease-in-out gap-5 lg:p-4 rounded-md bg-transparent lg:hover:bg-gray-500 lg:hover:ring-1 lg:hover:ring-gray-700 lg:hover:backdrop-blur-xl lg:hover:bg-opacity-20 lg:hover:shadow-md"
                 >
                   <div className="basis-3/4">
                     <h1 className="text-base flex gap-1 items-center group-hover:text-blue-300 transition-colors duration-300 ease-in-out underline text-white">
