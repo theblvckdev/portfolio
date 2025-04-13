@@ -24,15 +24,15 @@ const HeroComponent = () => {
   ];
 
   const socialLinks = [
-    { icon: <IoLogoGithub />, path: "https://github.com/theblvckdev" },
+    { icon: <IoLogoGithub />, path: "https://github.com/iamnathan-dev" },
     {
       icon: <IoLogoInstagram />,
-      path: "https://www.instagram.com/blank.me101/",
+      path: "https://www.instagram.com/iamnathan.dev/",
     },
-    { icon: <BsTwitterX />, path: "https://x.com/just_nathan001" },
+    { icon: <BsTwitterX />, path: "https://x.com/iamnathan_dev" },
     {
       icon: <IoLogoLinkedin />,
-      path: "https://www.linkedin.com/in/theblvckdev/",
+      path: "https://www.linkedin.com/in/iamnathan-dev/",
     },
   ];
 
