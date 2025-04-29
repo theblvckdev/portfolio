@@ -13,10 +13,9 @@ const ContactSection = () => {
         </h1>
 
         <p className="lg:mt-0 mt-3 text-sm">
-          Impressed wiht my work? Please feel free to send me an email, I'm
-          always open to new opportunities, I am also open to collab on new
-          ideas for a project, or just want to say hi? No problem, I am always
-          available and just a mail away:{" "}
+          I'm currently open to new opportunities and collaborations. Whether
+          you'd like to discuss a project, explore potential partnerships, or
+          simply connect, I welcome your message at:{" "}
           <a
             href="mailto: nathancodes05@gmail.com"
             className="no-underline outline-none text-blue-300 font-[500]"

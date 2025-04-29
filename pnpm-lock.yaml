@@ -11,6 +11,9 @@ importers:
       '@headlessui/react':
         specifier: ^1.7.17
         version: 1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@lottiefiles/dotlottie-react':
+        specifier: ^0.13.4
+        version: 0.13.4(react@18.3.1)
       '@testing-library/jest-dom':
         specifier: ^5.17.0
         version: 5.17.0
@@ -1016,6 +1019,14 @@ packages:
 
   '@leichtgewicht/ip-codec@2.0.5':
     resolution: {integrity: sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==}
+
+  '@lottiefiles/dotlottie-react@0.13.4':
+    resolution: {integrity: sha512-QW3hSF1k95B56nswzs5iLY7FFGbwv/DkNDK3Kv1PyaoInAmj0+BE0496YTkWqRaYM2p0jKskjrZrLsHJVvfatg==}
+    peerDependencies:
+      react: ^17 || ^18 || ^19
+
+  '@lottiefiles/dotlottie-web@0.43.0':
+    resolution: {integrity: sha512-mIfb2aZj1xFY/NTtZ4tQPiOVz8MfWDkdUOCVpzCv3q8C8WRKxZUwPgIG8BdqhkujPksS9eYDXH/4f9qxyfNCwg==}
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
     resolution: {integrity: sha512-54/JRvkLIzzDWshCWfuhadfrfZVPiElY8Fcgmg1HroEly/EDSszzhBAsarCux+D/kOslTRquNzuyGSmUSTTHGg==}
@@ -6896,6 +6907,13 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.0
 
   '@leichtgewicht/ip-codec@2.0.5': {}
+
+  '@lottiefiles/dotlottie-react@0.13.4(react@18.3.1)':
+    dependencies:
+      '@lottiefiles/dotlottie-web': 0.43.0
+      react: 18.3.1
+
+  '@lottiefiles/dotlottie-web@0.43.0': {}
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
     dependencies:
