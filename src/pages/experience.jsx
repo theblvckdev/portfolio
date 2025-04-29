@@ -67,7 +67,7 @@ const ExperienceSection = () => {
           className="mt-8"
         >
           <a
-            href="https://docs.google.com/document/d/1JoWCt22TA8-ZWpZ1-pn6kGXnaFSU6SsJu5TeHjluMAA/edit?usp=sharing"
+            href="https://drive.google.com/file/d/19Llq9I5GqgRGRxyV9TKh8SIsTbk6x2BL/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="w-fit group outline-none text-sm underline text-white duration-300 ease-in hover:text-blue-300 flex gap-2 items-center"
