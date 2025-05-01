@@ -4,11 +4,15 @@ const ContactSection = () => {
       <section
         data-aos="fade-up"
         data-aos-duration="1000"
-        ata-aos-easing="ease-in"
+        data-aos-easing="ease-in"
         className="xl:mt-24 mt-20 text-gray-500"
         id="experience"
+        aria-labelledby="contact-heading"
       >
-        <h1 className="text-white font-semibold text-2xl lg:hidden block mb-5">
+        <h1
+          id="contact-heading"
+          className="text-white font-semibold text-2xl lg:hidden block mb-5"
+        >
           Contact
         </h1>
 
@@ -17,8 +21,9 @@ const ContactSection = () => {
           you'd like to discuss a project, explore potential partnerships, or
           simply connect, I welcome your message at:{" "}
           <a
-            href="mailto: nathancodes05@gmail.com"
+            href="mailto:nathancodes05@gmail.com"
             className="no-underline outline-none text-blue-300 font-[500]"
+            aria-label="Email me at nathancodes05@gmail.com"
           >
             nathancodes05@gmail.com
           </a>

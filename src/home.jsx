@@ -18,8 +18,11 @@ const Home = () => {
 
   return (
     <>
-      <main className="h-screen font-poppins text-gray-300">
-        <section className="max-w-[67rem] xl:w-full lg:w-[85%] w-[90%] mx-auto">
+      <main className="h-screen font-poppins text-gray-300" role="main">
+        <section
+          className="max-w-[67rem] xl:w-full lg:w-[85%] w-[90%] mx-auto"
+          aria-label="Main content"
+        >
           <AnimatedCursor
             showSystemCursor={true}
             innerSize={0}
@@ -49,7 +52,11 @@ const Home = () => {
           />
           <HeroComponent />
 
-          <div className="xl:ml-[50%] lg:ml-[53%] lg:py-24 py-16 h-full">
+          <div
+            className="xl:ml-[50%] lg:ml-[53%] lg:py-24 py-16 h-full"
+            role="region"
+            aria-label="Content sections"
+          >
             <AboutSection />
             <ExperienceSection />
             <ProjectsSection />

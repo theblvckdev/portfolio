@@ -4,11 +4,15 @@ const AboutSection = () => {
       <section
         data-aos="fade-in"
         data-aos-duration="1000"
-        ata-aos-easing="ease-in"
+        data-aos-easing="ease-in"
         className="text-gray-500"
         id="about"
+        aria-labelledby="about-heading"
       >
-        <h1 className="text-white font-semibold text-2xl lg:hidden block mb-5">
+        <h1
+          id="about-heading"
+          className="text-white font-semibold text-2xl lg:hidden block mb-5"
+        >
           About
         </h1>
         <p className="text-sm">
@@ -23,6 +27,7 @@ const AboutSection = () => {
             className="underline outline-none text-white duration-300 ease-in hover:text-blue-300"
             target="_blank"
             rel="noreferrer"
+            aria-label="Follow me on Twitter"
           >
             twitter
           </a>
@@ -32,6 +37,7 @@ const AboutSection = () => {
             className="underline outline-none text-white duration-300 ease-in hover:text-blue-300"
             target="_blank"
             rel="noreferrer"
+            aria-label="Connect with me on LinkedIn"
           >
             linkedin
           </a>
@@ -46,8 +52,8 @@ const AboutSection = () => {
           knowledge.
         </p>
         <p className="mt-4 text-sm">
-          When I’m not at the computer, I’m usually playing soccer or
-          basketball, or playing FIFA 23 with firends.
+          When I'm not at the computer, I'm usually playing soccer or
+          basketball, or playing FIFA 23 with friends.
         </p>
       </section>
     </>
