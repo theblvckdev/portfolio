@@ -19,6 +19,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/archive" element={<AllProjects />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>
