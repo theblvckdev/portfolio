@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
 import { BsTwitterX } from "react-icons/bs";
+import { BiLogoUpwork } from "react-icons/bi";
 
 const HeroComponent = () => {
   const [activeSection, setActiveSection] = useState("");
@@ -24,15 +25,22 @@ const HeroComponent = () => {
   ];
 
   const socialLinks = [
-    { icon: <IoLogoGithub />, path: "https://github.com/iamnathan-dev" },
     {
-      icon: <IoLogoInstagram />,
+      icon: <IoLogoGithub size={28} />,
+      path: "https://github.com/iamnathan-dev",
+    },
+    {
+      icon: <IoLogoInstagram size={28} />,
       path: "https://www.instagram.com/iamnathan.dev/",
     },
-    { icon: <BsTwitterX />, path: "https://x.com/iamnathan_dev" },
+    { icon: <BsTwitterX size={28} />, path: "https://x.com/iamnathan_dev" },
     {
-      icon: <IoLogoLinkedin />,
+      icon: <IoLogoLinkedin size={28} />,
       path: "https://www.linkedin.com/in/iamnathan-dev/",
+    },
+    {
+      icon: <BiLogoUpwork size={35} />,
+      path: "https://www.upwork.com/freelancers/~01eef3ccc7348ee8f4?mp_source=share",
     },
   ];
 

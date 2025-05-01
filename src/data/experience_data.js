@@ -36,12 +36,11 @@ export const experiences = [
   },
 
   {
-    title: "Software Developer",
-    company: "Creatvise",
-    link: "https://www.creatvise.com/",
-    duration: "Oct 2024 - Jan 2025",
-    content: `I contributed to the development of a design software.
- I worked independently with the product team to translate design into functional components`,
-    tools: ["UX", "Next.js", "Typescript"],
+    title: "Frontend developer",
+    company: "Grit Informed Media",
+    link: "https://www.gritinformedia.tech/",
+    duration: "May 2022 - July 2024",
+    content: `I revamped the company’s website, improving its performance and user experience.`,
+    tools: ["React", "Next.js", "JavaScript"],
   },
 ];
