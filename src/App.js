@@ -11,7 +11,6 @@ const App = () => {
   useEffect(() => {
     AOS.init({
       once: true,
-      disable: window.innerWidth < 768,
     });
     AOS.refresh();
   }, []);
