@@ -38,10 +38,10 @@ const HeroComponent = () => {
       icon: <IoLogoLinkedin size={28} />,
       path: "https://www.linkedin.com/in/iamnathan-dev/",
     },
-    {
-      icon: <BiLogoUpwork size={35} />,
-      path: "https://www.upwork.com/freelancers/~01eef3ccc7348ee8f4?mp_source=share",
-    },
+    // {
+    //   icon: <BiLogoUpwork size={35} />,
+    //   path: "https://www.upwork.com/freelancers/~01eef3ccc7348ee8f4?mp_source=share",
+    // },
   ];
 
   useEffect(() => {
