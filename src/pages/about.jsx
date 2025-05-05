@@ -16,12 +16,13 @@ const AboutSection = () => {
           About
         </h1>
         <p className="text-sm">
-          In 2021, I embarked on my journey as a software developer after being
-          inspired by witnessing a colleague's programming work. This sparked my
-          passion for coding and web development, leading me to fully immerse
-          myself in the field. Today, I have had the privilege of developing
-          sophisticated web applications and solutions, while also sharing my
-          expertise with others on{" "}
+          As a driven software developer since 2021, I've consistently led and
+          delivered high-impact web solutions that solve complex business
+          challenges. My journey began when I recognized the transformative
+          power of programming, and I've since established myself as a technical
+          leader in web development. Through my expertise in building
+          sophisticated applications and mentoring others, I've created lasting
+          value while actively sharing my knowledge on{" "}
           <a
             href="https://twitter.com/iamnathan_dev"
             className="underline outline-none text-white duration-300 ease-in hover:text-blue-300"
@@ -45,15 +46,18 @@ const AboutSection = () => {
         </p>
 
         <p className="mt-4 text-sm">
-          Currently, my primary focus is on developing innovative projects that
-          enhance my technical expertise and problem-solving abilities. During
-          my spare time, I actively engage in coding challenges, and participate
-          in competitive programming hackathons to further expand my skills and
-          knowledge.
+          As a value-driven developer, I consistently deliver innovative
+          solutions that drive business impact and exceed client expectations.
+          My proven track record includes successfully architecting and
+          implementing complex features that significantly improve user
+          experience and system performance. I thrive on taking ownership of
+          challenging projects and delivering measurable results through my
+          technical expertise and strategic problem-solving approach.
         </p>
         <p className="mt-4 text-sm">
-          When I'm not at the computer, I'm usually playing soccer or
-          basketball, or playing FIFA 23 with friends.
+          Beyond coding, I enjoy staying active through soccer and basketball,
+          and engaging in friendly FIFA matches - maintaining a healthy
+          work-life balance while nurturing my competitive spirit.{" "}
         </p>
       </section>
     </>
