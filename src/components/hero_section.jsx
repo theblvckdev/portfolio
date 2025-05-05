@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
 import { BsTwitterX } from "react-icons/bs";
-import { BiLogoUpwork } from "react-icons/bi";
+// import { BiLogoUpwork } from "react-icons/bi";
 
 const HeroComponent = () => {
   const [activeSection, setActiveSection] = useState("");
