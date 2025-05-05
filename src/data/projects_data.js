@@ -24,7 +24,7 @@ export const projects = [
 
   {
     title: "Unique Kids House",
-    content: `Unique Kids House is a leading online destination for children's fashion and accessories in Nigeria. Discover a curated collection of trendy and comfortable clothing, shoes, and accessories for kids of all ages. Shop with confidence on our user-friendly platform designed for parents who value quality and style.`,
+    content: `Unique Kids House is a leading online destination for children's fashion and accessories in Nigeria, offering a curated collection of trendy clothing and accessories for kids.`,
     liveUrl: "https://www.unique-kids-house.com.ng/",
     tools: ["React", "Tailwind", "JavaScript"],
     year: 2023,

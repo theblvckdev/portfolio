@@ -5,7 +5,7 @@ export const experiences = [
     link: "https://bethel-flow.vercel.app/",
     duration: "Feb 2025 - Present",
     content:
-      "Developed responsive web applications, optimized for performance, implemented responsive design principles, fixed high prioority bugs, and collaborated with cross-functional teams.",
+      "Led development of responsive web applications, optimizing performance and implementing mobile-first design principles while collaborating with cross-functional teams.",
     tools: [
       "Next.js",
       "Typescript",
@@ -21,9 +21,8 @@ export const experiences = [
     company: "BrandDrive",
     link: "https://branddrive.co/",
     duration: "Oct 2024 - Feb 2025",
-    content: `Built and maintained responsive user interfaces that supported the company’s core business tools.
- Collaborated closely with designers and backend engineers to implement new features.
- Improve performance, and ensure a seamless user experience`,
+    content:
+      "Led development of responsive web applications, optimizing performance and implementing mobile-first design principles while collaborating with cross-functional teams.",
     tools: [
       "Ionic",
       "Next.js",
@@ -40,7 +39,8 @@ export const experiences = [
     company: "Grit Informed Media",
     link: "https://www.gritinformedia.tech/",
     duration: "May 2022 - July 2024",
-    content: `I revamped the company’s website, improving its performance and user experience.`,
+    content:
+      "Led website redesign to enhance performance and user experience, implementing modern web technologies and best practices for improved site speed and accessibility.",
     tools: ["React", "Next.js", "JavaScript"],
   },
 ];
